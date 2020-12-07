@@ -14,6 +14,7 @@ public class Chart extends JComponent{
         g.fillRect(0, 405, 800, 200);
         g.setColor(Color.decode("#2a3d66"));
         g.fillRect(0, 600, 800, 200);
+
         // Snow Effect
         g.setColor(Color.WHITE);
         for(int j = 0; j <= 400; j+=100){
@@ -25,6 +26,18 @@ public class Chart extends JComponent{
             }
         }
 
+        //Clouds
+        g.setColor(Color.decode("#e8e8e8"));
+        g.fillOval(0,50,200, 15);
+        g.fillOval(650,25,200, 15);
+        g.fillOval(200,75,200, 15);
+        g.fillOval(450,80,200, 15);
+
+        //Tree
+        g.setColor(Color.decode("#825959"));
+        g.fillRect(690,459,20,50);
+        g.setColor(Color.decode("#335d2d"));
+        g2.fillPolygon(new int[] {650,700,750}, new int[]{460,250,460}, 3);
 
         // Snow-Dad
             //Body
