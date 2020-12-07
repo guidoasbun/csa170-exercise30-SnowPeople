@@ -9,11 +9,22 @@ public class Chart extends JComponent{
 
         // Background
         g.setColor(Color.decode("#d789d7"));
-        g.fillRect(0, 0, 800, 400);
+        g.fillRect(0, 0, 800, 405);
         g.setColor(Color.decode("#9d65c9"));
-        g.fillRect(0, 400, 800, 200);
+        g.fillRect(0, 405, 800, 200);
         g.setColor(Color.decode("#2a3d66"));
         g.fillRect(0, 600, 800, 200);
+        // Snow Effect
+        g.setColor(Color.WHITE);
+        for(int j = 0; j <= 400; j+=100){
+            for(int i = 0; i < 800; i+=100){
+                g.fillOval(i+100,j,5,5);
+            }
+            for(int i = 0; i < 800; i+=100){
+                g.fillOval(i+50,j-50,5,5);
+            }
+        }
+
 
         // Snow-Dad
             //Body
@@ -39,6 +50,13 @@ public class Chart extends JComponent{
         g2.setStroke(new BasicStroke(25));
         g2.draw(new Line2D.Float(200,410,265,410));
         g2.draw(new Line2D.Float(260,415,275,430));
+            // Buttons
+        g.setColor(Color.BLACK);
+        g.fillOval(220,500,20,20);
+        g.fillOval(220,450,20,20);
+        g.setColor(Color.decode("#aa3a3a"));
+        g.fillOval(225,505,13,13);
+        g.fillOval(225,455,13,13);
             //Arms
         g.setColor(Color.BLACK);
         g2.setStroke(new BasicStroke(3));
@@ -82,6 +100,13 @@ public class Chart extends JComponent{
         g2.setStroke(new BasicStroke(25));
         g2.draw(new Line2D.Float(415,433,470,433));
         g2.draw(new Line2D.Float(470,440,480,450));
+            // Buttons
+        g.setColor(Color.BLACK);
+        g.fillOval(430,510,20,20);
+        g.fillOval(430,465,20,20);
+        g.setColor(Color.decode("#aa3a3a"));
+        g.fillOval(434,514,13,13);
+        g.fillOval(434,469,13,13);
             //Arms
         g.setColor(Color.BLACK);
         g2.setStroke(new BasicStroke(3));
@@ -124,6 +149,13 @@ public class Chart extends JComponent{
         g2.setStroke(new BasicStroke(10));
         g2.draw(new Line2D.Float(585,553,615,553));
         g2.draw(new Line2D.Float(615,556,625,560));
+        // Buttons
+        g.setColor(Color.BLACK);
+        g.fillOval(595,595,10,10);
+        g.fillOval(595,570,10,10);
+        g.setColor(Color.decode("#ffc7c7"));
+        g.fillOval(597,596,6,6);
+        g.fillOval(597,571,6,6);
             //Arms
         g.setColor(Color.BLACK);
         g2.setStroke(new BasicStroke(3));
