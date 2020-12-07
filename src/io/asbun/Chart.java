@@ -16,10 +16,20 @@ public class Chart extends JComponent{
         g.fillRect(0, 600, 800, 200);
 
         // Snow-Dad
+            //Body
         g.setColor(Color.decode("#f6f6f6"));
         g.fillOval(175,300,120, 120);
         g.fillOval(155,400,150,150);
         g.fillOval(130,518, 200,200);
+            //Face
+        g.setColor(Color.BLACK);
+        g.fillOval(200,325,20,20);
+        g.fillOval(250,325,20,20);
+        g2.setStroke(new BasicStroke(5));
+        g2.draw(new Line2D.Float(235, 340, 235, 360));
+        g2.draw(new Line2D.Float(215,380,250,380));
+        g2.draw(new Line2D.Float(215,380,210,375));
+        g2.draw(new Line2D.Float(250,380,255,375));
             //Hat
         g.setColor(Color.decode("#0a043c"));
         g.fillRect(192,240, 90,65);
@@ -44,10 +54,29 @@ public class Chart extends JComponent{
 
 
         //Snow-mom
+            //Body
         g.setColor(Color.decode("#f6f6f6"));
         g.fillOval(395,340,100, 100);
         g.fillOval(375,425,130,130);
         g.fillOval(350,530, 180,180);
+            //Face
+        g.setColor(Color.BLACK);
+        g.fillOval(418,365,20,20);
+        g.fillOval(456,365,20,20);
+        g2.setStroke(new BasicStroke(5));
+        g2.draw(new Line2D.Float(447,375,447,390));
+        g2.draw(new Line2D.Float(435,408,457,408));
+        g2.draw(new Line2D.Float(435,408,430,403));
+        g2.draw(new Line2D.Float(457,408,462,403));
+            //Ear Muffs
+        g.setColor(Color.decode("#aa3a3a"));
+        g.fillOval(385,375,15,30);
+        g.fillOval(490,375,15,30);
+        g.setColor(Color.BLACK);
+        g2.setStroke(new BasicStroke(3));
+        g2.draw(new Line2D.Float(392,377,405,335));
+        g2.draw(new Line2D.Float(405,335,484,335));
+        g2.draw(new Line2D.Float(497,377,484,335));
             //Scarf
         g.setColor(Color.decode("#aa3a3a"));
         g2.setStroke(new BasicStroke(25));
@@ -72,6 +101,24 @@ public class Chart extends JComponent{
         g.fillOval(578,515,45, 45);
         g.fillOval(565,550,70,70);
         g.fillOval(550,600, 100,100);
+            //Face
+        g.setColor(Color.BLACK);
+        g.fillOval(590,525,8,8);
+        g.fillOval(605,525,8,8);
+        g2.setStroke(new BasicStroke(3));
+        g2.draw(new Line2D.Float(601,530,601,535));
+        g2.draw(new Line2D.Float(596,542,606,542));
+        g2.draw(new Line2D.Float(596,542,594,540));
+        g2.draw(new Line2D.Float(606,542,608,540));
+            //Ear Muffs
+        g.setColor(Color.decode("#ffc7c7"));
+        g.fillOval(575,523,8,15);
+        g.fillOval(618,523,8,15);
+        g.setColor(Color.BLACK);
+        g2.setStroke(new BasicStroke(3));
+        g2.draw(new Line2D.Float(577,522,580,511));
+        g2.draw(new Line2D.Float(580,511,617,511));
+        g2.draw(new Line2D.Float(620,522,617,511));
             //Scarf
         g.setColor(Color.decode("#ffc7c7"));
         g2.setStroke(new BasicStroke(10));
